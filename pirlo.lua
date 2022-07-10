@@ -1043,7 +1043,7 @@ Num_Msg_Max = Redis:hget(Thepirlo.."pirlo:Spam:Group:User"..msg_chat_id,"Num:Spa
 end
 end 
 if text and Redis:get(Thepirlo..'lock:Fshar'..msg.chat_id) and not msg.Distinguished then 
-list = {"كس","كسمك","كسختك","عير","كسخالتك","خرا بالله","عير بالله","كسخواتكم","كحاب","مناويج","مناويج","كحبه","ابن الكحبه","فرخ","فروخ","طيزك","طيزختك"}
+list = {"كس","كسمك","كسختك","عير","كسخالتك","خرا بالله","عير بالله","كسخواتكم","كحاب","مناويج","مناويج","كحبه","ابن الكحبه","فرخ","فروخ","طيزك","طيزختك","،"}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
 LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
@@ -11150,6 +11150,7 @@ local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "دراكون")
 local BotName = {
 "نادني "..NamesBot.. " عزيزي",
 "عزيزي اسمي "..NamesBot.. " وانت ؟",
+"ععمري اسمي "..NamesBot.. " نتعرف ؟",
 }
 NamesBots = BotName[math.random(#BotName)]
 if photo.total_count > 0 then
@@ -13747,6 +13748,19 @@ name = string.gsub(name,"⌛️","⏳⏳⏳⏳⏳⏳⌛️⏳⏳")
 name = string.gsub(name,"📅","📆📆📆📆📆📆📅📆📆")
 return LuaTele.sendText(msg_chat_id,msg_id," ‹ ︙ اسرع واحد يدز الاختلاف ~ {"..name.."}","md",true)  
 end
+end
+if Manager(msg) then
+if text == "فحص" and ChCheck(msg) or text == "فحص البوت" and ChCheck(msg) then
+local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChatMember?chat_id='..msg.chat_id_..'&user_id='..Trox)
+local GetInfo = JSON.decode(Check)
+if GetInfo.ok == true then
+if GetInfo.result.can_change_info == true then EDT = '✔️' else EDT = '✖️' end
+if GetInfo.result.can_delete_messages == true then DEL = '✔️' else DEL = '✖️' end
+if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖️' end
+if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
+if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
+if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
+Dev_Dragon(msg.chat_id_, msg.id_, 1, ' ‹ ︙صلاحيات البوت هي ↫ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n ‹ ︙حذف الرسائل ↫ '..DEL..'\n ‹ ︙دعوة المستخدمين ↫ '..INV..'\n ‹ ︙حظر المستخدمين ↫ '..BAN..'\n ‹ ︙تثبيت الرسائل ↫ '..PIN..'\n ‹ ︙تغيير المعلومات ↫ '..EDT..'\n ‹ ︙اضافة مشرفين ↫ '..VIP..'\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉', 1, 'md')
 end
 if text == "امثله" then
 if Redis:get(Thepirlo.."pirlo:Status:Games"..msg.chat_id) then
