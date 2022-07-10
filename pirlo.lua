@@ -698,7 +698,7 @@ data = {
 {text = '- ارسال استفتاء : '..polls, data = UserId.. '/polls'}, 
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =IdUser..'/'.. '/delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =IdUser..'/'.. '/delAmr'}
 },
 }
 }
@@ -2385,8 +2385,8 @@ if text == 'تحديث السورس' or text == 'تحديث السورس  ‹ �
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ‹ ︙ هاذا الامر يخص ( '..Controller_Num(1)..' )* ',"md",true)  
 end
---os.execute('rm -rf pirlo.lua')
---download('https://github.com/Mohmmedrg/NIGHTMARE/blob/main/pirlo.lua','pirlo.lua')
+os.execute('rm -rf pirlo.lua')
+download('https://github.com/marfe-sourse/pirlo/blob/main/pirlo.lua','pirlo.lua')
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ‹ ︙ تم تحديث السورس * ',"md",true)  
 end
 if text == 'جلب نسخه احتياطيه' then
@@ -2901,7 +2901,7 @@ data = {
 {text = '- ميمز', data = msg.sender.user_id..'/memz@'..msg_chat_id},{text = '- غنيلي', data = msg.sender.user_id..'/kne@'..msg_chat_id},
 },
 {
-{text = ' ❲ ‹ -  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .. ❳ ',url="https://t.me/c_p_8"}
+{text = ' ⟨ ‹ -  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .. ⟩',url="https://t.me/c_p_8"}
 },
 }
 }
@@ -5830,7 +5830,7 @@ return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender.user_id,t).Re
 end
 if text == "غنيلي" then
 Abs = math.random(2,140); 
-local Text =" [ ‹ ︙ تم اختياࢪ الاغنيه لك : -](t.me/allush3)"
+local Text =" [ ‹ ︙ تم اختياࢪ الاغنيه لك : -](t.me/c_p_8)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -5854,14 +5854,14 @@ https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ms
 end
 if text == "شعر" then
 Abs = math.random(2,140); 
-local Text =" [ ‹ ︙ تم اختياࢪ الشعر لك :  ](t.me/allush3)"
+local Text =" [ ‹ ︙ تم اختياࢪ الشعر لك :  ](t.me/c_p_8)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re1@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 {
 {text = 'اخفاء الميوزك .', callback_data = IdUser..'/delAmr'},
@@ -5872,10 +5872,10 @@ https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ms
 end
 if text == "ميمز" then
 Abs = math.random(2,140); 
-local Text =" [متحركات Gٍٓif ᯓ ](t.me/allush3)"
+local Text =" [متحركات Gٍٓif ᯓ ](t.me/c_p_8)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}},
+{{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/https://t.me/c_p_8/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5906,7 +5906,7 @@ else
 Bio = ''
 end
 if photo.total_count > 0 then
-local TestText = "  ❲ Owner Groups ❳\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Owner Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n ‹ ︙ *Owner Bio* : [❲ "..Bio.." ❳]"
+local TestText = "  ⟨ Owner Groups ❳\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Owner Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id..")\n ‹ ︙ *Owner Bio* : [⟨ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
@@ -5934,7 +5934,7 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(Sudo_Id)
 if photo.total_count > 0 then
-local TestText = "  ❲ Developers Bot ❳\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..Sudo_Id..")\n ‹ ︙ *Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "  ⟨ Developers Bot ❳\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..Sudo_Id..")\n ‹ ︙ *Dev Bio* : [⟨ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
@@ -5944,7 +5944,7 @@ keyboardd.inline_keyboard = {
 local msg_id = msg.id/2097152/0.5 
 return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
 else
-local TestText = "  ❲ Developers Source ❳\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..Sudo_Id..")\n ‹ ︙ *Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "  ⟨ Developers Source ❳\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..Sudo_Id..")\n ‹ ︙ *Dev Bio* : [⟨ "..Bio.." ❳]"
 local msg_id = msg.id/2097152/0.5 
 return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id.."&parse_mode=markdown")
 end
@@ -5961,11 +5961,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n ‹ ︙ *Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "  - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n ‹ ︙ *Dev Bio* : [⟨ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/s_l_3"}
+{text = '⟨ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/s_l_3"}
 },
 {
 {text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url='https://t.me/c_p_8'},
@@ -5978,7 +5978,7 @@ local TestText = "- معلومات مبࢪمج السورس : \\nn: name Dev . [
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/s_l_3"}
+{text = '⟨ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/s_l_3"}
 },
 {
 {text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url='https://t.me/c_p_8'},
@@ -6001,11 +6001,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n ‹ ︙ *Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "  - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .\n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n  ‹ ︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n ‹ ︙ *Dev Bio* : [⟨ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝗎𝗉𝖽𝖺𝗍𝖾’s ❳', url = "https://t.me/s_l_3"}
+{text = '⟨ 𝗎𝗉𝖽𝖺𝗍𝖾’s ❳', url = "https://t.me/s_l_3"}
 },
 {
 {text = '- .', url='https://t.me/c_p_8'},
@@ -6043,7 +6043,7 @@ data = {
 {text = ' مسح الاساسين ', data =msg.sender.user_id..'/'.. 'TheBasics'}
 },
 {
-{text = '❲ إخفاء الأمر ❳', data =msg.sender.user_id..'/'.. 'delAmr'}
+{text = '⟨ إخفاء الأمر ❳', data =msg.sender.user_id..'/'.. 'delAmr'}
 },
 }
 }
@@ -6070,7 +6070,7 @@ Be confident in the power of God and you will never regret
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'Delete Telegram',url="https://my.telegram.org/auth?to=delete"},{text = 'Delete Bot ',url="https://t.me/LC6BOT"}},
-{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete snapchat',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.pirlochat.com%2Faccounts%2Fdeleteaccount"}},{{text= ' سورس  دراكون',url="t.me/allush3"}}
+{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete snapchat',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.pirlochat.com%2Faccounts%2Fdeleteaccount"}},{{text= ' سورس  دراكون',url="t.me/c_p_8"}}
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/LifeAsoo/4489&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9095,10 +9095,10 @@ return LuaTele.sendText(msg_chat_id,msg_id," ‹ ︙ تم تعطيل جلب ال
 end 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {
-{text ="❲ رابط انلاين ❳", data = msg.sender.user_id.."/linkinlen"},{text ="❲ رابط كليشه ❳", data = msg.sender.user_id.."/linkiklesh"}, 
+{text ="⟨ رابط انلاين ❳", data = msg.sender.user_id.."/linkinlen"},{text ="⟨ رابط كليشه ❳", data = msg.sender.user_id.."/linkiklesh"}, 
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =msg.sender.user_id..'/'.. 'delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =msg.sender.user_id..'/'.. 'delAmr'}
 },
 }
 }
@@ -9482,7 +9482,7 @@ data = {
 {text = 'تعطيل اطردني', data = msg.sender.user_id..'/'.. 'unmute_kickme'},{text = 'تفعيل اطردني', data = msg.sender.user_id..'/'.. 'mute_kickme'},
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =msg.sender.user_id..'/'.. 'delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =msg.sender.user_id..'/'.. 'delAmr'}
 },
 }
 }
@@ -9544,7 +9544,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -9599,10 +9599,10 @@ data = {
 {text = GetSetieng(msg_chat_id).lock_bots, data = '&'},{text = 'البوتات : ', data =msg.sender.user_id..'/'.. 'Status_bots'},
 },
 {
-{text = '❲ التالي ❳ ', data =msg.sender.user_id..'/'.. 'NextSeting'}
+{text = '⟨ التالي ⟩', data =msg.sender.user_id..'/'.. 'NextSeting'}
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =msg.sender.user_id..'/'.. 'delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =msg.sender.user_id..'/'.. 'delAmr'}
 },
 }
 }
@@ -9715,7 +9715,7 @@ data = {
 {text = '- ارسال استفتاء : '..polls, data =msg.sender.user_id.. '/polls'}, 
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =msg.sender.user_id..'/'.. '/delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =msg.sender.user_id..'/'.. '/delAmr'}
 },
 }
 }
@@ -10939,7 +10939,7 @@ data = {
 {text = '- ❺ -', data = msg.sender.user_id..'/help5'}, {text = '- ❻ -', data = msg.sender.user_id..'/help7'},
 },
 {
-{text = '❲ القفل و الفتح ❳', data = msg.sender.user_id..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = msg.sender.user_id..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = msg.sender.user_id..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -10971,7 +10971,7 @@ data = {
 {text = '- م1 -', data = msg.sender.user_id..'/help1'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -10994,7 +10994,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11017,7 +11017,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11040,7 +11040,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11063,7 +11063,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -12248,7 +12248,7 @@ bot.sendText(msg.chat_id,msg.id,[[
 
 - اضغط للنسخ
 
-[-  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .](t.me/allush3)
+[-  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .](t.me/c_p_8)
 ]],"md",true)  
 return false
 end
@@ -12283,7 +12283,7 @@ bot.sendText(msg.chat_id,msg.id,[[
  ‹ ︙  خلع
  ‹ ︙  ترتيبي
 
-[-  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .](t.me/allush3)
+[-  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .](t.me/c_p_8)
 ]],"md",true)  
 return false
 end
@@ -13927,10 +13927,10 @@ data = {
 {text = ' ‹ ︙ أضفني .', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = ' ‹ ︙ شࢪوحات السوࢪس -', url = 't.me/allush4'},
+{text = ' ‹ ︙ شࢪوحات السوࢪس -', url = 't.me/c_p_8'},
 },
 {
-{text = ' ‹ ︙ سۅࢪس  RedBull-', url = 't.me/allush3'},
+{text = ' ‹ ︙ سۅࢪس  -  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .-', url = 't.me/c_p_8'},
 },
 }
 }
@@ -13943,10 +13943,10 @@ data = {
 {text = ' ‹ ︙ أضفني .', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = ' ‹ ︙ شࢪوحات السوࢪس', url = 't.me/allush4'}, {text = ' ‹ ︙ شراء بوت', url = 't.me/s_l_3'},
+{text = ' ‹ ︙ شࢪوحات السوࢪس', url = 't.me/c_p_8'}, {text = ' ‹ ︙ شراء بوت', url = 't.me/s_l_3'},
 },
 {
-{text = ' ‹ ︙ . ‹ .', url = 't.me/allush3'},
+{text = ' ‹ ︙ . ‹ .', url = 't.me/c_p_8'},
 },
 }
 }
@@ -14876,7 +14876,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. ChatId .. '&photo=https://t.me/MoviesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14923,7 +14923,7 @@ local Text ='* - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .\n⋆┄┄─
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '❲ ‹ -  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .. ❳',url="https://t.me/c_p_8"},{text = ' Updates source ⁦ᯓ',url="https://t.me/c_p_8"}
+{text = '⟨ ‹ -  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .. ❳',url="https://t.me/c_p_8"},{text = ' Updates source ⁦ᯓ',url="https://t.me/c_p_8"}
 },
 {
 {text = ' مبࢪمج السورس',url="https://t.me/s_l_3"}
@@ -14946,7 +14946,7 @@ keyboard.inline_keyboard = {
 {text = ' ‹ ︙ مره اخرى 🔃 .', callback_data = IdUser..'/gifes@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. ChatId .. '&animation=https://t.me/https://t.me/GifWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14972,7 +14972,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '❲ ‹ ❳',url="t.me/allush3"}
+{text = '⟨ ‹ ❳',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -15000,7 +15000,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -15029,7 +15029,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15048,7 +15048,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ ❳',url="t.me/allush3"}
+{text = '⟨ ❳',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15067,7 +15067,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re1@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/shaarpirlo/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15095,7 +15095,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '❲ - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .❳',url="t.me/allush3"}
+{text = '⟨ - ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .❳',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. ChatId .. '&animation=https://t.me/GifWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15122,7 +15122,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -15150,7 +15150,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾 ‹ RedBull:',url="t.me/allush3"}
+{text = '𝖲𝗈𝗎𝗋𝖼𝖾 ‹ -  ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .:',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -15202,7 +15202,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/allush3"}
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -15346,7 +15346,7 @@ Num = math.random(9,133)
 au ={
 type = "audio",
 media = "https://t.me/F_6AA/"..Num.."",
-caption = "[Ch : 𝐒𝐍𝐀𝐏 ](t.me/allush3)\n",
+caption = "[Ch : 𝐒𝐍𝐀𝐏 ](t.me/c_p_8)\n",
 parse_mode = "Markdown"                                                                                                                                                               
 }     
 keyboard = {} 
@@ -15480,10 +15480,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15541,10 +15541,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15600,10 +15600,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15653,10 +15653,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15694,10 +15694,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15749,10 +15749,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15811,7 +15811,7 @@ data = {
 {text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -15848,7 +15848,7 @@ data = {
 {text = '- كرة السلة ', url = 'http://t.me/gamee?game=BasketBoy'}, {text = '- القط المجنون', url = 'http://t.me/gamee?game=CrazyCat'}, 
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =IdUser..'/'.. 'delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =IdUser..'/'.. 'delAmr'}
 },
 }
 }
@@ -15868,7 +15868,7 @@ data = {
 {text = ' ‹ ︙ الالعاب المتطوࢪه', data = IdUser..'/degm'}, 
 },
 {
-{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/allush3'}, 
+{text = '- ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -15912,10 +15912,10 @@ data = {
 {text = '- ❺ -', data = IdUser..'/help5'}, {text = '- ❻ -', data = IdUser..'/help7'}, 
 },
 {
-{text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
+{text = '⟨ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '⟨ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '❲ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
+{text = '⟨ إخفاء الأمر ❳', data = IdUser..'/delAmr'},
 },
 }
 }
@@ -17076,10 +17076,10 @@ data = {
 {text = 'تعطيل اطردني', data = IdUser..'/'.. 'unmute_kickme'},{text = 'تفعيل اطردني', data = IdUser..'/'.. 'mute_kickme'},
 },
 {
-{text = '❲ القائمه الرئيسيه❳', data = IdUser..'/helpall'},
+{text = '⟨ القائمه الرئيسيه❳', data = IdUser..'/helpall'},
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =IdUser..'/'.. 'delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =IdUser..'/'.. 'delAmr'}
 },
 }
 }
@@ -17136,10 +17136,10 @@ data = {
 {text = '- الرجوع ... ', data =IdUser..'/'.. 'NoNextSeting'}
 },
 {
-{text = '❲ القائمه الرئيسيه❳', data = IdUser..'/helpall'},
+{text = '⟨ القائمه الرئيسيه❳', data = IdUser..'/helpall'},
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =IdUser..'/'.. '/delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =IdUser..'/'.. '/delAmr'}
 },
 }
 }
@@ -17190,13 +17190,13 @@ data = {
 {text = GetSetieng(ChatId).lock_bots, data = '&'},{text = 'البوتات : ', data =IdUser..'/'.. 'Status_bots'},
 },
 {
-{text = '❲ التالي ❳ ', data =IdUser..'/'.. 'NextSeting'}
+{text = '⟨ التالي ⟩', data =IdUser..'/'.. 'NextSeting'}
 },
 {
-{text = '❲ القائمه الرئيسيه❳', data = IdUser..'/helpall'},
+{text = '⟨ القائمه الرئيسيه❳', data = IdUser..'/helpall'},
 },
 {
-{text = '❲ اخفاء الامر ❳ ', data =IdUser..'/'.. 'delAmr'}
+{text = '⟨ اخفاء الامر ⟩', data =IdUser..'/'.. 'delAmr'}
 },
 }
 }
