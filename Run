@@ -6,9 +6,9 @@ Please wait until the installation is complete
 \033[0m'
 echo -e '\033[0;33m
 If it is the first time to install the source, send the number » {1}
-or اذا كانت اول مره تنصب السورس ارسل رقم » {1}
+or اذا كانت اول مره تنصب السورس ارسل رقم ‹ {1}
 If you have already installed the source, send the number » {2}
-or اذا سبق ونصبت السورس ارسل رقم » {2}
+or اذا سبق ونصبت السورس ارسل رقم ‹ {2}
 \033[0m'
 read Install
 case $Install in
