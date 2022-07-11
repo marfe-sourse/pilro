@@ -111,7 +111,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1983379011}  
+local ListSudos ={Sudo_Id,5359109940}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -122,9 +122,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(Thepirlo.."pirlo:DevelopersQ:Groups",UserId) 
-if UserId == 1983379011 then
+if UserId == 5359109940 then
 Status = true
-elseif UserId == 5201412275 then
+elseif UserId == 1983379011 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -148,10 +148,10 @@ Managers = Redis:sismember(Thepirlo.."pirlo:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Thepirlo.."pirlo:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Thepirlo.."pirlo:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1983379011 then
+if UserId == 5359109940 then
 Status = 'مطوࢪ السوࢪس '
-elseif UserId == 5201412275 then
-Status = 'مبرمج السورس'
+elseif UserId == 1983379011 then
+Status = 'مبࢪمج السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == Thepirlo then
@@ -710,12 +710,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ](https://t.me/iinzzz)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه المسح *',
-unLock   = '[‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ](https://t.me/iinzzz)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ](https://t.me/iinzzz)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه الكتم *',
-lockKid  = '[‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ](https://t.me/iinzzz)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه التقييد *',
-lockKick = '[‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ](https://t.me/iinzzz)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه الطرد *',
-Reply    = '[‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ](https://t.me/iinzzz)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n🔰 : المستخدم⇷ *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[ ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ](https://t.me/c_p_8)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه المسح *',
+unLock   = '[ ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ](https://t.me/c_p_8)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[ ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ](https://t.me/c_p_8)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه الكتم *',
+lockKid  = '[ ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ](https://t.me/c_p_8)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه التقييد *',
+lockKick = '[ ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ](https://t.me/c_p_8)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n᥀︙ بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙ خاصيه الطرد *',
+Reply    = '[ ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ](https://t.me/c_p_8)\n*⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n🔰 : المستخدم⇷ *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -729,9 +729,9 @@ Managers = Redis:sismember(Thepirlo.."pirlo:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Thepirlo.."pirlo:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Thepirlo.."pirlo:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1983379011 then
+if UserId == 5359109940 then
 Status = true
-elseif UserId == 5201412275 then
+elseif UserId == 1983379011 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -771,9 +771,9 @@ Managers = Redis:sismember(Thepirlo.."pirlo:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Thepirlo.."pirlo:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Thepirlo.."pirlo:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1983379011 then
+if UserId == 5359109940 then
 Status = true
-elseif UserId == 5201412275 then
+elseif UserId == 1983379011 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -901,10 +901,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 1983379011 then
+if tonumber(msg.sender.user_id) == 5359109940 then
 msg.Name_Controller = 'مطوࢪ السوࢪس  '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 5201412275 then
+elseif tonumber(msg.sender.user_id) == 1983379011 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -1159,7 +1159,7 @@ for k,v in pairs(msg.content.member_user_ids) do
 local Info_User = LuaTele.getUser(v) 
 print(v)
 if v == tonumber(Thepirlo) then
-local N = (Redis:get(Thepirlo.."Name:Bot") or "سناب")
+local N = (Redis:get(Thepirlo.."Name:Bot") or "دراكون")
 photo = LuaTele.getUserProfilePhotos(Thepirlo)
 return LuaTele.sendPhoto(msg.chat_id, 0, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,'*᥀︙ انا بوت اسمي '..N..'\n᥀︙ وظيفتي حمايه الكروب من السبام والتفليش الخ....\n᥀︙ لتفعيل البوت قم اضافته للمجموعتك وقم برفعه مشرف واكتب تفعيل\n*', "md")
 end
@@ -1602,7 +1602,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 }
@@ -1618,7 +1618,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
  `#id` ↬ ايدي المستخدم
  `#stast` ↬ رتبة المستخدم
  `#edit` ↬ عدد السحكات
-
+- اضغط للنسخ .
 ]],"md",true, false, false, false, reply_markup)
 return false
 end
@@ -1799,7 +1799,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 }
@@ -1815,7 +1815,7 @@ LuaTele.sendText(msg_chat_id,msg_id,[[
  `#id` ↬ ايدي المستخدم
  `#stast` ↬ رتبة المستخدم
  `#edit` ↬ عدد السحكات
-
+- اضغط للنسخ .
 ]],"md",true, false, false, false, reply_markup)
 return false
 end
@@ -2063,7 +2063,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 }
@@ -2450,7 +2450,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"RFRFF"}'
+Get_Json = Get_Json..'"Dev":"s_l_3"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -2609,7 +2609,7 @@ for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
 UserInfo.first_name = Name_User
 break
 end 
-NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "سناب")
+NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "دراكون")
 Groups = (Redis:scard(Thepirlo..'pirlo:ChekBotAdd') or 0)
 Users = (Redis:scard(Thepirlo..'pirlo:Num:User:Pv') or 0)
 if photo.total_count > 0 then
@@ -2619,13 +2619,13 @@ local Usperos = 'عدد المشتركين : '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = Jabwa, url = 'https://t.me/Rfrffdbot'}, 
+{text = Jabwa, url = 'https://t.me/Dragonmohsbot'}, 
 },
 {
-{text = Grosupsw, url = 'https://t.me/Rfrffdbot'}, 
+{text = Grosupsw, url = 'https://t.me/Dragonmohsbot'}, 
 },
 {
-{text = Usperos, url = 'https://t.me/Rfrffdbot'}, 
+{text = Usperos, url = 'https://t.me/Dragonmohsbot'}, 
 },
 }
 msgg = msg.id/2097152/0.5
@@ -2867,11 +2867,11 @@ data = {
 {text = '- ميمز', data = msg.sender.user_id..'/memz@'..msg_chat_id},{text = '- غنيلي', data = msg.sender.user_id..'/kne@'..msg_chat_id},
 },
 {
-{text = ' ❲ S𝘰𝘶𝘳𝘤𝘦 S𝘯𝘢𝘱 ❳ ',url="https://t.me/iinzzz"}
+{text = ' ❲ S𝘰𝘶𝘳𝘤𝘦 𝔇ℜ𝔞𝔤𝔬𝔫 ❳ ',url="https://t.me/c_p_8"}
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙ اهلا بك مجددا عزيزي \n᥀︙ اليك الازرار الخاصه بأوامر التسليه الخاصه بسورس دراكونفقط اضغط على الامر الذي تريد تنفيذه *','md', true, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*᥀︙ اهلا بك مجددا عزيزي \n᥀︙ اليك الازرار الخاصه بأوامر التسليه الخاصه بسوࢪس دࢪاكون فقط اضغط على الامر الذي تريد تنفيذه *','md', true, false, false, false, reply_markup)
 end
 if text == "@all" or text == "تاك عام" or text == "all" then
 if not msg.Addictive then
@@ -2924,7 +2924,7 @@ local F333F = ' \n᥀︙ تم تعطيل المتحركه'
 LuaTele.sendText(msg_chat_id,msg_id,F333F,"md")
 Redis:set(Thepirlo..'Abs:gif:Abs'..msg.chat_id,true)  
 end
-if text and (text == "متحركه" or text == "↫ متحركه ✯") and not Redis:get(Thepirlo..'Abs:gif:Abs'..msg.chat_id) then
+if text and (text == "متحركه" or text == "↫ متحركه ᥀") and not Redis:get(Thepirlo..'Abs:gif:Abs'..msg.chat_id) then
 Abs = math.random(2,1075); 
 local Text ='*᥀︙ تم اختيار المتحركه لك*'
 local msg_id = msg.id/2097152/0.5
@@ -2946,7 +2946,7 @@ local F333F = ' \n᥀︙ تم تعطيل الميمز'
 LuaTele.sendText(msg_chat_id,msg_id,F333F,"md")
 Redis:set(Thepirlo..'Abs:memz:Abs'..msg.chat_id,true)  
 end
-if text and (text == "ميمز" or text == "↫ ميمز ✯") and not Redis:get(Thepirlo..'Abs:memz:Abs'..msg.chat_id) then
+if text and (text == "ميمز" or text == "↫ ميمز ᥀") and not Redis:get(Thepirlo..'Abs:memz:Abs'..msg.chat_id) then
 Abs = math.random(2,1201); 
 local Text ='*᥀︙ تم اختيار مقطع الميمز لك*'
 local msg_id = msg.id/2097152/0.5
@@ -2986,7 +2986,7 @@ local F333F = ' \n᥀︙ تم تعطيل الصوره'
 LuaTele.sendText(msg_chat_id,msg_id,F333F,"md")
 Redis:set(Thepirlo..'Abs:Photo:Abs'..msg.chat_id,true)  
 end
-if text and (text == "صوره" or text == "↫ صوره ✯") and not Redis:get(Thepirlo..'Abs:Photo:Abs'..msg.chat_id) then
+if text and (text == "صوره" or text == "↫ صوره ᥀") and not Redis:get(Thepirlo..'Abs:Photo:Abs'..msg.chat_id) then
 Abs = math.random(4,1171); 
 local Text ='*᥀︙ تم اختيار الصوره لك*'
 local msg_id = msg.id/2097152/0.5
@@ -3009,7 +3009,7 @@ local F333F = ' \n᥀︙ تم تعطيل الانمي'
 LuaTele.sendText(msg_chat_id,msg_id,F333F,"md")
 Redis:set(Thepirlo..'Abs:Anime:Abs'..msg.chat_id,true)  
 end
-if text and (text == "انمي" or text == "↫ انمي ✯") and not Redis:get(Thepirlo..'Abs:Anime:Abs'..msg.chat_id) then
+if text and (text == "انمي" or text == "↫ انمي ᥀") and not Redis:get(Thepirlo..'Abs:Anime:Abs'..msg.chat_id) then
 Abs = math.random(3,1002); 
 local Text ='*᥀︙ تم اختيار صورة الانمي لك*'
 local msg_id = msg.id/2097152/0.5
@@ -3032,7 +3032,7 @@ local F333F = ' \n᥀︙ تم تعطيل الافلام'
 LuaTele.sendText(msg_chat_id,msg_id,F333F,"md")
 Redis:set(Thepirlo..'Abs:Movies:Abs'..msg.chat_id,true)  
 end
-if text and (text == "فلم" or text == "↫ فلم ✯") and not Redis:get(Thepirlo..'Abs:Movies:Abs'..msg.chat_id) then
+if text and (text == "فلم" or text == "↫ فلم ᥀") and not Redis:get(Thepirlo..'Abs:Movies:Abs'..msg.chat_id) then
 Abs = math.random(45,125); 
 local Text ='*᥀︙ تم اختيار الفلم لك*'
 local msg_id = msg.id/2097152/0.5
@@ -3054,7 +3054,7 @@ local F333F = ' \n᥀︙ تم تعطيل المسلسلات'
 LuaTele.sendText(msg_chat_id,msg_id,F333F,"md")
 Redis:set(Thepirlo..'Abs:Series:Abs'..msg.chat_id,true)  
 end
-if text and (text == "مسلسل" or text == "↫ مسلسل ✯") and not Redis:get(Thepirlo..'Abs:Series:Abs'..msg.chat_id) then
+if text and (text == "مسلسل" or text == "↫ مسلسل ᥀") and not Redis:get(Thepirlo..'Abs:Series:Abs'..msg.chat_id) then
 Abs = math.random(2,54); 
 local Text ='*᥀︙ تم اختيار المسلسل لك*'
 local msg_id = msg.id/2097152/0.5
@@ -3157,7 +3157,7 @@ end
 if text and Redis:get(Thepirlo..":"..msg.sender.user_id..":krh_Bots"..msg.chat_id) == "sendkrhe" then
 num = {"😂 10","🤤 20","😢 30","😔 35","😒 75","🤩 34","😗 66","🤐 82","😪 23","😫 19","😛 55","😜 80","😲 63","😓 32","🙂 27","😎 89","😋 99","😁 98","😀 79","🤣 100","😣 8","🙄 3","😕 6","🤯 0",};
 sendnum = num[math.random(#num)]
-local tttttt = '⌯ اليك النتائج الخـاصة :\n\n⌯ نسبه الكرة : *'..text..'* '..sendnum..'%'
+local tttttt = '᥀ اليك النتائج الخـاصة :\n\n᥀ نسبه الكرة : *'..text..'* '..sendnum..'%'
 LuaTele.sendText(msg_chat_id,msg_id,tttttt) 
 Redis:del(Thepirlo..":"..msg.sender.user_id..":krh_Bots"..msg.chat_id)
 end
@@ -3577,7 +3577,7 @@ if text == 'رتبتي' then
 local ban = LuaTele.getUser(msg.sender.user_id)
 local news = ' '..msg.Name_Controller
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
-{{text =news,url = "https://t.me/iinzzz"}, },}}
+{{text =news,url = "https://t.me/c_p_8"}, },}}
 return LuaTele.sendText(msg_chat_id,msg_id,'\n᥀︙ رتبتك هي : '..msg.Name_Controller,"md", false, false, false, false, reply_markup)
 end
 if text == 'ايديي' then
@@ -5398,7 +5398,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 }
@@ -5822,7 +5822,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re1@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 {
 {text = 'اخفاء الميوزك .', callback_data = IdUser..'/delAmr'},
@@ -5836,7 +5836,7 @@ Abs = math.random(2,140);
 local Text =" [متحركات Gٍٓif ᯓ ](t.me/YIY88Y)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}},
+{{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/https://t.me/YIY88Y/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -5871,7 +5871,7 @@ local TestText = "  ❲ Owner Groups ❳\n⋆┄┄─┄─┄─┄┄─┄�
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -5899,7 +5899,7 @@ local TestText = "  ❲ Developers Bot ❳\n⋆┄┄─┄─┄─┄┄─┄
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -5911,7 +5911,7 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_i
 end
 end
 if text == 'مبرمج سورس' or text == 'مطور السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("RFRFF")
+local UserId_Info = LuaTele.searchPublicChat("s_l_3")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -5922,14 +5922,14 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n ᥀︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n᥀︙ *Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "   ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n ᥀︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n᥀︙ *Dev Bio* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/RFRFF"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/s_l_3"}
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -5939,10 +5939,10 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/RFRFF"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/s_l_3"}
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -5951,7 +5951,7 @@ end
 end
 end
 if text == 'محدث السورس' or text == 'مطور سورس' or text == 'المحدث' then  
-local UserId_Info = LuaTele.searchPublicChat("@iinzzz")
+local UserId_Info = LuaTele.searchPublicChat("@K_8_U")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -5962,14 +5962,14 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n ᥀︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n᥀︙ *Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "   ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆\n ᥀︙ *Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n᥀︙ *Dev Bio* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝗎𝗉𝖽𝖺𝗍𝖾’s ❳', url = "https://t.me/VW4WV"}
+{text = '❲ 𝗎𝗉𝖽𝖺𝗍𝖾’s ❳', url = "https://t.me/c_p_8"}
 },
 {
-{text = '- ??𝘯𝘢𝘱 𝖲𝗈𝗎𝗋𝖼𝖾 .', url='https://t.me/iinzzz'},
+{text = '- 𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 𝖲𝗈𝗎𝗋𝖼𝖾 .', url='https://t.me/c_p_8'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -5979,7 +5979,7 @@ local TestText = "- معلومات محدث السورس : \\nn: name Dev . ["..
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url='https://t.me/iinzzz'},
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url='https://t.me/c_p_8'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -6030,8 +6030,8 @@ Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'Delete Telegram',url="https://my.telegram.org/auth?to=delete"},{text = 'Delete Bot ',url="https://t.me/LC6BOT"}},
-{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete pirlochat',url="https://accounts.pirlochat.com/accounts/login?continue=https%3A%2F%2Faccounts.pirlochat.com%2Faccounts%2Fdeleteaccount"}},{{text= '❲ 𝘴????𝘱 𝖲𝗈𝗎𝗋𝖼𝖾 ❳',url="t.me/iinzzz"}}
+{{text = 'Delete Telegram',url="https://my.telegram.org/auth?to=delete"},{text = '᥀︙ بوت الحذف ',url="https://t.me/LC6BOT"}},
+{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete pirlochat',url="https://accounts.pirlochat.com/accounts/login?continue=https%3A%2F%2Faccounts.pirlochat.com%2Faccounts%2Fdeleteaccount"}},{{text= '❲ 𝘴????𝘱 𝖲𝗈𝗎𝗋𝖼𝖾 ❳',url="t.me/c_p_8"}}
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/NNAON/474&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -6138,23 +6138,23 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg_
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 local Text =[[
-*᥀︙ 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 𝘴𝘯𝘢𝘱 .*
+*᥀︙ 𝗐ᴇʟᴄᴏ𝗆𝖾 ᴛᴏ 𝗌𝗈𝗎𝗋𝖼𝖾 𝔇ℜ𝔞𝔤𝔬𝔫 .*
 ⋆┄┄─┄─┄─┄┄─┄─┄┄⋆
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ❲ S𝘰𝘶𝘳𝘤𝘦 S𝘯𝘢𝘱 ❳ ',url="https://t.me/iinzzz"},{text = '  ❲ 𝘦𝘹𝘱𝘭𝘢𝘯𝘢𝘵𝘪𝘰𝘯𝘴 ❳ ',url="https://t.me/BBI9B"}
+{text = ' ❲ S𝘰𝘶𝘳𝘤𝘦 𝔇ℜ𝔞𝔤𝔬𝔫 ❳ ',url="https://t.me/c_p_8"},{text = '  ❲ 𝘦𝘹𝘱𝘭𝘢𝘯𝘢𝘵𝘪𝘰𝘯𝘴 ❳ ',url="https://t.me/c_p_8"}
 },
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳',url="https://t.me/RFRFF"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳',url="https://t.me/s_l_3"}
 },
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/c_p_8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == "منو اني" then
-if msg.sender.user_id == tonumber(1983379011) then
+if msg.sender.user_id == tonumber(5359109940) then
 LuaTele.sendText(msg_chat_id,msg_id,"‹ : انت دراكون مطور السورس يقلبي🌚💘","md",true)
 elseif msg.sender.user_id == tonumber(Sudo_Id) then
 LuaTele.sendText(msg_chat_id,msg_id,"‹ : انت المطور الاساسي يقلبي🌚💘","md",true)
@@ -6183,10 +6183,10 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = "https://t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = "https://t.me/c_p_8"}
 },
 {
-{text = '❲ VIP version updates ❳', url = "https://https://t.me/eilanD_Source"}
+{text = '❲ VIP version updates ❳', url = "https://https://t.me/c_p_8"}
 },
 }
 }
@@ -9533,7 +9533,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -10934,7 +10934,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = msg.sender.user_id..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -10966,7 +10966,7 @@ data = {
 {text = '- م1 -', data = msg.sender.user_id..'/help1'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -10989,7 +10989,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11012,7 +11012,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11035,7 +11035,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11058,7 +11058,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 {
 {text = 'إخفاء الأمر', data = msg.sender.user_id..'/delAmr'},
@@ -11122,8 +11122,8 @@ end
 Redis:del(Thepirlo.."pirlo:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙ تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(Thepirlo.."pirlo:Name:Bot") or "سناب") then
-local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "سناب")
+if text == (Redis:get(Thepirlo.."pirlo:Name:Bot") or "دراكون") then
+local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "دراكون")
 local NameBots = {
 "يروح "..NamesBot.. " كول؟",
 "انا "..NamesBot.. " القميل",
@@ -11141,7 +11141,7 @@ for Name_User in string.gmatch(UserInfo.first_name, "[^%s]+" ) do
 UserInfo.first_name = Name_User
 break
 end 
-local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "سناب")
+local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "دراكون")
 local BotName = {
 "نادني "..NamesBot.. " عزيزي",
 "عزيزي اسمي "..NamesBot.. " وانت ؟",
@@ -11151,7 +11151,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = NamesBots, url = 'https://t.me/iinzzz'}, 
+{text = NamesBots, url = 'https://t.me/c_p_8'}, 
 },
 {
 {text = '᥀︙ أضفني .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11182,7 +11182,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = NamesBots, url = 'https://t.me/iinzzz'}, 
+{text = NamesBots, url = 'https://t.me/c_p_8'}, 
 },
 {
 {text = '᥀︙ أضفني .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11193,10 +11193,10 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. ms
 end
 end
 if text == "كيف الحال" then
-local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "سناب")
+local NamesBot = (Redis:get(Thepirlo.."pirlo:Name:Bot") or "دراكون")
 local BotName = {
 "الحمد لله ونته",
-"على قول @RFRFF ع الباري ونتَ",
+"على قول @s_l_3 ع الباري ونتَ",
 "انا بخير",
 }
 return LuaTele.sendText(msg_chat_id,msg_id,BotName[math.random(#BotName)],"md",true)   
@@ -11869,7 +11869,7 @@ name = string.gsub(name,"الولايات المتحده","🇱🇷")
 name = string.gsub(name,"كندا","🇨🇦")
 name = string.gsub(name,"الكويت","🇰🇼")
 name = string.gsub(name,"ليبيا","🇱🇾")
-name = string.gsub(name,"السودان","🇸??")
+name = string.gsub(name,"السودان","🇸🇩")
 name = string.gsub(name,"سوريا","🇸🇾")
 return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙ اسرع واحد يرسل اسم الدولة ~ {"..name.."}","md",true)  
 end
@@ -11970,18 +11970,18 @@ name = string.gsub(name,"🐼","👻👻👻🐼👻👻👻👻👻👻👻")
 name = string.gsub(name,"🐇","🕊🕊🕊🕊🕊🐇🕊🕊🕊🕊")
 name = string.gsub(name,"🌑","🌚🌚🌚🌚🌚🌑🌚🌚🌚")
 name = string.gsub(name,"🌚","🌑🌑🌑🌑🌑🌚🌑🌑🌑")
-name = string.gsub(name,"⭐️","??🌟??🌟🌟🌟🌟🌟⭐️🌟🌟🌟")
-name = string.gsub(name,"✨","💫💫💫💫💫✨??💫💫💫")
+name = string.gsub(name,"⭐️","🌟🌟🌟🌟🌟🌟⭐️🌟🌟🌟")
+name = string.gsub(name,"✨","💫💫💫💫💫✨💫💫💫")
 name = string.gsub(name,"⛈","🌨🌨🌨🌨🌨⛈🌨🌨🌨🌨")
 name = string.gsub(name,"🌥","⛅️⛅️⛅️⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️")
 name = string.gsub(name,"⛄️","☃☃☃☃☃☃⛄️☃☃☃☃")
-name = string.gsub(name,"👨‍🔬","👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍??👩‍🔬👩‍🔬👩‍🔬")
-name = string.gsub(name,"??‍💻","👩‍💻👩‍??👩‍‍💻👩‍‍??👩‍‍💻👨‍💻??‍💻👩‍💻👩‍💻")
-name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍??👨‍🔧👩‍🔧")
-name = string.gsub(name,"👩‍🍳","👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳??‍🍳")
+name = string.gsub(name,"👨‍🔬","👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍👩‍🔬👩‍🔬👩‍🔬")
+name = string.gsub(name,"💻","👩‍💻👩‍👩‍‍💻👩‍‍👩‍‍💻👨‍💻💻👩‍💻👩‍💻")
+name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍👨‍🔧👩‍🔧")
+name = string.gsub(name,"👩‍🍳","👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳🍳")
 name = string.gsub(name,"🧚‍♀","🧚‍♂🧚‍♂🧚‍♂🧚‍♂🧚‍♀🧚‍♂🧚‍♂")
 name = string.gsub(name,"🧜‍♂","🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧚‍♂🧜‍♀🧜‍♀🧜‍♀")
-name = string.gsub(name,"🧝‍♂","🧝‍♀🧝‍♀🧝‍♀??‍♀🧝‍♀🧝‍♂🧝‍♀🧝‍♀🧝‍♀")
+name = string.gsub(name,"🧝‍♂","🧝‍♀🧝‍♀🧝‍♀♀🧝‍♀🧝‍♂🧝‍♀🧝‍♀🧝‍♀")
 name = string.gsub(name,"🙍‍♂️","🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️🙎‍♂️🙎‍♂️")
 name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️??‍♂️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️")
 name = string.gsub(name,"👬","👭👭👭👭👭👬👭👭👭")
@@ -12172,10 +12172,10 @@ data = {
 {text = '᥀︙ أضفني .', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '᥀︙ شࢪوحات السوࢪس -', url = 't.me/BBI9B'},
+{text = '᥀︙ شࢪوحات السوࢪس -', url = 't.me/c_p_8'},
 },
 {
-{text = '᥀︙ سۅࢪس دراكون-', url = 't.me/iinzzz'},
+{text = '᥀︙ سۅࢪس دراكون -', url = 't.me/c_p_8'},
 },
 }
 }
@@ -12188,10 +12188,10 @@ data = {
 {text = '᥀︙ أضفني .', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '᥀︙ شࢪوحات السوࢪس', url = 't.me/BBI9B'}, {text = '᥀︙ شراء بوت', url = 't.me/RFRFF'},
+{text = '᥀︙ شࢪوحات السوࢪس', url = 't.me/c_p_8'}, {text = '᥀︙ شراء بوت', url = 't.me/s_l_3'},
 },
 {
-{text = '᥀︙ 𝗦ηαρ 𝗦??𝙪𝙧𝘤𝙚 ', url = 't.me/iinzzz'},
+{text = '᥀︙ 𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 . ', url = 't.me/c_p_8'},
 },
 }
 }
@@ -13041,7 +13041,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. ChatId .. '&photo=https://t.me/MoviesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13084,14 +13084,14 @@ if Text and Text:match('(%d+)/source@') then
 local UserId = Text:match('(%d+)/source@')
 if tonumber(IdUser) == tonumber(UserId) then
 Abs = math.random(2,54); 
-local Text ='* 𝘴𝘯𝘢𝘱 𝖲𝗈𝗎𝗋𝖼𝖾 \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆*'
+local Text ='* 𝔇ℜ𝔞𝔤𝔬𝔫 𝖲𝗈𝗎𝗋𝖼𝖾 \n⋆┄┄─┄─┄─┄┄─┄─┄┄⋆*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '❲ S𝘰𝘶𝘳𝘤𝘦 S𝘯𝘢𝘱 ❳',url="https://t.me/iinzzz"},{text = ' Updates source ⁦ᯓ',url="https://t.me/BBI9B"}
+{text = '❲ S𝘰𝘶𝘳𝘤𝘦 𝔇ℜ𝔞𝔤𝔬𝔫 ❳',url="https://t.me/c_p_8"},{text = ' Updates source ⁦ᯓ',url="https://t.me/c_p_8"}
 },
 {
-{text = '  S𝘯𝘢𝘱 ⁦ᯓ',url="https://t.me/RFRFF"}
+{text = '  𝔇ℜ𝔞𝔤𝔬𝔫 ⁦ᯓ',url="https://t.me/s_l_3"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -13111,7 +13111,7 @@ keyboard.inline_keyboard = {
 {text = '᥀︙ مره اخرى 🔃 .', callback_data = IdUser..'/gifes@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. ChatId .. '&animation=https://t.me/https://t.me/GifWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13137,7 +13137,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '❲ 𝖾𝗂𝗅𝖺??ᴅ 𝖲𝗈𝗎𝗋𝖼𝖾 ❳',url="t.me/iinzzz"}
+{text = '❲ 𝖾𝗂𝗅𝖺??ᴅ 𝖲𝗈𝗎𝗋𝖼𝖾 ❳',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -13165,7 +13165,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -13194,7 +13194,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13213,7 +13213,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ ??𝘯𝘢𝘱 𝖲𝗈𝗎𝗋𝖼𝖾 ❳',url="t.me/iinzzz"}
+{text = '❲ 𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 𝖲𝗈𝗎𝗋𝖼𝖾 ❳',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13232,7 +13232,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re1@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/shaarpirlo/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13260,7 +13260,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '❲ 𝘴𝘯𝘢𝘱 𝖲𝗈??𝗋𝖼𝖾 ❳',url="t.me/iinzzz"}
+{text = '❲ 𝔇ℜ𝔞𝔤𝔬𝔫 𝖲𝗈𝗋𝖼𝖾 ❳',url="t.me/c_p_8"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. ChatId .. '&animation=https://t.me/GifWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13287,7 +13287,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -13315,7 +13315,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '?? ! 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 :',url="t.me/iinzzz"}
+{text = ' !   ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 . :',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -13367,7 +13367,7 @@ keyboard.inline_keyboard = {
 {text = '- ميمز', callback_data = IdUser..'/memz@'},{text = '- غنيلي', callback_data = IdUser..'/kne@'},
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ',url="t.me/iinzzz"}
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ',url="t.me/c_p_8"}
 },
 }
 local msg_id = Msg_id/2097152/0.5
@@ -13511,7 +13511,7 @@ Num = math.random(9,133)
 au ={
 type = "audio",
 media = "https://t.me/F_6AA/"..Num.."",
-caption = "[Ch : 𝐒𝐍𝐀𝐏 ](t.me/iinzzz)\n",
+caption = "[Ch : 𝐒𝐍𝐀𝐏 ](t.me/c_p_8)\n",
 parse_mode = "Markdown"                                                                                                                                                               
 }     
 keyboard = {} 
@@ -13651,7 +13651,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -13712,7 +13712,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -13774,7 +13774,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -13830,7 +13830,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -13874,7 +13874,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 . ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -13932,7 +13932,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 . ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -13976,7 +13976,7 @@ local TextHelp = [[*
 ⋆┄┄─┄─┄─┄┄─┄─┄┄⋆
 ᥀︙ لآرسال همسه معينه اتبع الخطوات 
 ᥀︙ استخدم معرف البوت ونوب الرساله ونوب معرف الشخص المراد ارسال الهمسه اليه : مثال 
-᥀︙ @Rfrffdbot هلا @RFRFF
+᥀︙ @Dragonmohsbot هلا @s_l_3
 ⋆┄┄─┄─┄─┄┄─┄─┄┄⋆
 ᥀︙ ‹ الان حصريا تحشيش جديد :
 ⋆┄┄─┄─┄─┄┄─┄─┄┄⋆
@@ -14000,12 +14000,12 @@ data = {
 {text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},
 },
 {
-{text = '‹ 𝗦ηαρ ??𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = '‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 . ', url = 't.me/c_p_8'}, 
 },
 }
 }
 local TextHelp = [[*
-᥀︙ أهلا بك في قائمة العاب سورس دراكوناختر نوع الالعاب 
+᥀︙ أهلا بك في قائمة العاب سوࢪس دࢪاكون اختر نوع الالعاب 
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -14040,12 +14040,12 @@ data = {
 {text = '❲ اخفاء الامر ❳ ', data =IdUser..'/'.. 'delAmr'}
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
 local TextHelp = [[*
-᥀︙ مرحبا بك في الالعاب المتطورة الخاص بسورس دراكون
+᥀︙ مرحبا بك في الالعاب المتطورة الخاص بسوࢪس دࢪاكون 
 ᥀︙ اختر اللعبه ثم اختار المحادثة التي تريد اللعب بها
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
@@ -14060,7 +14060,7 @@ data = {
 {text = '᥀︙ الالعاب المتطوࢪه', data = IdUser..'/degm'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = ' ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 .  ', url = 't.me/c_p_8'}, 
 },
 }
 }
@@ -14110,7 +14110,7 @@ data = {
 {text = '❲ القفل و الفتح ❳', data = IdUser..'/NoNextSeting'}, {text = '❲ التعطيل و التفعيل ❳', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '‹ 𝗦ηαρ 𝗦𝙤𝙪𝙧𝘤𝙚 ‹ ', url = 't.me/iinzzz'}, 
+{text = '   ‹ ︙𝔇ℜ𝔞𝔤𝔬𝔫 𝔱𝔢𝔞𝔪 . ‹ ', url = 't.me/c_p_8'}, 
 },
 }
 }
